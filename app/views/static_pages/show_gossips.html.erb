@@ -1,0 +1,12 @@
+<div class="card" style="width= 18rem; ">
+  <div class="card-header"><%= @gossip.title %></div> <!-- Son titre ! -->
+  <div class="card-body">Contenu : <%= @gossip.content %> </br></br> Date de création : <%= @gossip.created_at %></div> <!-- Son Auteur et sa date de création ! -->
+  <div class="card-footer">Author : <%= link_to "#{@gossip.user.first_name} #{@gossip.user.last_name}", show_authors_path(@gossip.user.id) %></div><!-- Lien vers la page de l'auteur -->
+  <div class="card-footer"> Pour modifier le gossip : 
+    <a <%= link_to "Editer le contenu", edit_gossip_path(@gossip.id) %></a>
+  </div>
+<!-- Lien pour modifier le gossip -->
+  <div class="card-footer">
+    <a <%= root_path(@gossip.id) %> class="btn btn-danger" data-confirm="T'es sur ?" data-method="DELETE"</a>
+  </div>
+</div>

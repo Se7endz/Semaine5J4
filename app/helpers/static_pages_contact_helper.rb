@@ -1,0 +1,2 @@
+module StaticPagesContactHelper
+end

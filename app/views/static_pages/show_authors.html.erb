@@ -1,0 +1,14 @@
+<h2><%= "#{@author.first_name} #{@author.last_name}" %></h2>
+
+<ul>
+  
+  <li> <%= "Email : #{@author.email}" %></li> <!-- Son email -->
+  
+  <li> <%= link_to "City : #{@author.city.name}", show_city_path %></li><!-- Son lieu de residence -->
+
+  <li><%= "Age : #{@author.age}" %></li> <!-- Son age -->
+ 
+  <li><%= "Member since : #{@author.created_at}" %></li><!-- La date d'inscription' -->
+    
+  <li><%= @author.description %></li> <!-- INFO -->
+</ul>
