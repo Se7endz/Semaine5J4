@@ -1,24 +1,19 @@
-# README
+Voici une version de the gossip project from thp
+sur cette appli
+on peut :
+- creer un utilisateur (qui sera ajouter a la bdd)
+- d'acceder a sa page de profil
+- se connecter a une session
+- se deconnecter de cette meme session
+- il y a certaines pages inacessible sans etre logger
+- Possibilités de creer des gossip
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Pour run l'appli!
+faite un git clone des fichiers dans un dossier
+ensuite : - un bundle install
+          - rails db:create
+          - rails db:migrate
+          - rails server
+    joindre ensuite l'url http://http://localhost:3000/
+   
+GL & HF !
